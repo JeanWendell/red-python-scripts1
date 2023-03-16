@@ -1,5 +1,5 @@
 ##################################
-# Copyright of Jean Wendell 2021 #
+# v00v00 2021 #
 ##################################
 
 # Import subprocess so we can use system commands
